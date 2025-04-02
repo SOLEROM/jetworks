@@ -1,4 +1,4 @@
-#
+# uboot options
 
 
 ## mmc
