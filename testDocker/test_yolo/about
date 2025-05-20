@@ -1,0 +1,17 @@
+# about
+
+* ref: https://github.com/itsnine/yolov5-onnxruntime/tree/master
+* 5n produced from :  https://github.com/ultralytics/yolov5/releases/download/v6.0/yolov5n.pt
+
+## notes:
+
+to support gpu add cuda libs to ld with:
+export LD_LIBRARY_PATH=/usr/local/cuda-12.2/targets/aarch64-linux/lib:$LD_LIBRARY_PATH
+
+## examples
+
+infer	- run single inference [ _image - on test.jpg / _camera - single frame ]
+detect	- run inference and report box center cord [ _image - on test.jpg / _camera - single frame ]
+
+
+

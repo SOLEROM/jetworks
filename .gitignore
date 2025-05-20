@@ -172,3 +172,5 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+yolov5*.onnx
+testDocker/test_yolo/result.jpg
