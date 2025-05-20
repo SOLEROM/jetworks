@@ -1,0 +1,20 @@
+FROM nvcr.io/nvidia/l4t-base:r36.2.0
+
+ENV TZ=Etc/UTC
+ENV DEBIAN_FRONTEND=noninteractive
+#ENV LD_LIBRARY_PATH=/usr/local/cuda-12.2/targets/aarch64-linux/lib:${LD_LIBRARY_PATH}
+
+# Install system packages
+RUN apt update && apt install -y \
+    python3-pip python3-opencv libgl1 wget vim \
+    libcudart11.0 libcublas11 libcublas11 libcurand10 libcusolver11 libcusparse11 libcudnn8 \
+    libcublas-12-2 libcufft-12-2 libcufft-dev-12-2 cuda-cudart-12-2 cuda-cudart-dev-12-2
+
+
+# Copy wheel and app files into image
+COPY local_installs/* /tmp/
+WORKDIR /app
+
+# Install Python dependencies
+RUN pip3 install --no-cache-dir /tmp/onnxruntime_gpu-1.18.0-cp310-cp310-linux_aarch64.whl
+RUN pip3 install --no-cache-dir numpy==1.24.4 opencv-python
