@@ -9,3 +9,5 @@ jetson playground
 * [nano](./nano/readme.md)
 
 
+# Notes
+* [SW Alligment](./swAlignment.md)

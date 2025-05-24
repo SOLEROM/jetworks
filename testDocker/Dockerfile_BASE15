@@ -1,0 +1,20 @@
+FROM nvcr.io/nvidia/l4t-base:r35.4.1   # JetPack 5.0.2 / CUDA 11.2
+
+ENV TZ=Etc/UTC
+ENV DEBIAN_FRONTEND=noninteractive
+#ENV LD_LIBRARY_PATH=/usr/local/cuda-12.2/targets/aarch64-linux/lib:${LD_LIBRARY_PATH}
+
+# Install system packages
+RUN apt update && apt install -y \
+    python3-pip python3-opencv libgl1 wget vim \
+    libcudart11.2 libcublas11.2 libcufft10 libcurand10 libcusolver10 libcusparse11 \
+    libcudnn8=8.*-1+cuda11.2
+
+
+# Copy wheel and app files into image
+COPY local_installs/* /tmp/
+WORKDIR /app
+
+# Install Python dependencies
+RUN pip3 install --no-cache-dir onnxruntime_gpu-1.15.1-cp310-cp310-linux_aarch64.whl
+RUN pip3 install --no-cache-dir numpy==1.24.4 opencv-python

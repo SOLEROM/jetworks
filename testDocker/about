@@ -14,3 +14,6 @@ wget https://nvidia.box.com/shared/static/i7n40ki3pl2x57vyn4u7e9asyiqlnl7n.whl -
 
 
 wget https://nvidia.box.com/shared/static/48dtuob7meiw6ebgfsfqakc9vse62sg4.whl -O   onnxruntime_gpu-1.18.0-cp310-cp310-linux_aarch64.whl
+
+
+wget https://nvidia.box.com/shared/static/6xzvfoay12xdbwxpirwp1f991z9jopfo.whl -O onnxruntime_gpu-1.15.1-cp310-cp310-linux_aarch64.whl
