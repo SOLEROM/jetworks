@@ -8,6 +8,19 @@
 to support gpu add cuda libs to ld with:
 export LD_LIBRARY_PATH=/usr/local/cuda-12.2/targets/aarch64-linux/lib:$LD_LIBRARY_PATH
 
+##
+
+```
+python3 getVer.py  yolov5n.onnx 
+ai.onnx: opset 17
+python3 getVer.py  yolov5m.onnx
+ai.onnx: opset 12
+python3 getVer.py  yolov5s.onnx
+ai.onnx: opset 13
+
+```
+
+
 ## examples
 
 infer	- run single inference [ _image - on test.jpg / _camera - single frame ]

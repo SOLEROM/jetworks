@@ -17,3 +17,7 @@ wget https://nvidia.box.com/shared/static/48dtuob7meiw6ebgfsfqakc9vse62sg4.whl -
 
 
 wget https://nvidia.box.com/shared/static/6xzvfoay12xdbwxpirwp1f991z9jopfo.whl -O onnxruntime_gpu-1.15.1-cp310-cp310-linux_aarch64.whl
+
+wget https://nvidia.box.com/shared/static/mvdcltm9ewdy2d5nurkiqorofz1s53ww.whl -O onnxruntime_gpu-1.15.1-cp38-cp38-linux_aarch64.whl
+
+wget https://nvidia.box.com/shared/static/2sv2fv1wseihaw8ym0d4srz41dzljwxh.whl -O onnxruntime_gpu-1.11.0-cp38-cp38-linux_aarch64.whl

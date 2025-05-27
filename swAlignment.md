@@ -61,3 +61,7 @@ The wheel’s filename tells you: cp310 means it needs Python 3.10. Don’t inst
                 .... sudo apt-get install -y nvidia-container-toolkit
 
 ```
+
+## ONNX OPSET
+
+* also have version on onnx opset;
