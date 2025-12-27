@@ -1,4 +1,4 @@
-# stack allignment
+# stack alignment
 
 ## Runnig onnx inference on jetson hw from docker container
 

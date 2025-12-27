@@ -1,15 +1,13 @@
+# test dockers
 
+* TBD
 
+## wheels versions
 
-
-using the FROM nvcr.io/nvidia/... build arm64 images
-using pip  install onnxruntime-gpu cant get arm build ; 
-
-need to use wheels:
-
-get runtime according to version
+* get runtime according to version
 * https://elinux.org/Jetson_Zoo#ONNX_Runtime
 
+```
 wget https://nvidia.box.com/shared/static/i7n40ki3pl2x57vyn4u7e9asyiqlnl7n.whl -O  onnxruntime_gpu-1.17.0-cp310-cp310-linux_aarch64.whl
 
 
@@ -21,3 +19,5 @@ wget https://nvidia.box.com/shared/static/6xzvfoay12xdbwxpirwp1f991z9jopfo.whl -
 wget https://nvidia.box.com/shared/static/mvdcltm9ewdy2d5nurkiqorofz1s53ww.whl -O onnxruntime_gpu-1.15.1-cp38-cp38-linux_aarch64.whl
 
 wget https://nvidia.box.com/shared/static/2sv2fv1wseihaw8ym0d4srz41dzljwxh.whl -O onnxruntime_gpu-1.11.0-cp38-cp38-linux_aarch64.whl
+
+```
